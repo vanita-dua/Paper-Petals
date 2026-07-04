@@ -1,0 +1,119 @@
+/* ==========================================
+   Paper Petals
+   CSS Variables
+   ========================================== */
+
+:root {
+
+    /* ========= Brand Colors ========= */
+
+    --primary-color: #FFD6E7;
+    --secondary-color: #EBD8FF;
+    --accent-color: #A8E6CF;
+
+    /* ========= Background Colors ========= */
+
+    --background-color: #FFF8F3;
+    --surface-color: #FFFFFF;
+    --surface-light: #FFFDFB;
+
+    /* ========= Text Colors ========= */
+
+    --text-color: #3F3F3F;
+    --text-light: #666666;
+    --text-muted: #999999;
+
+    /* ========= Status Colors ========= */
+
+    --success-color: #6BCB77;
+    --warning-color: #FFC75F;
+    --error-color: #FF6B6B;
+    --info-color: #6EC6FF;
+
+    /* ========= Borders ========= */
+
+    --border-color: #ECECEC;
+
+    /* ========= Header ========= */
+
+    --header-height: 80px;
+
+    /* ========= Container ========= */
+
+    --container-width: 1200px;
+
+    /* ========= Border Radius ========= */
+
+    --radius-small: 8px;
+    --radius-medium: 16px;
+    --radius-large: 24px;
+    --radius-round: 999px;
+
+    /* ========= Shadows ========= */
+
+    --shadow-small:
+        0 2px 8px rgba(0,0,0,0.05);
+
+    --shadow-medium:
+        0 6px 18px rgba(0,0,0,0.08);
+
+    --shadow-large:
+        0 12px 30px rgba(0,0,0,0.12);
+
+    /* ========= Font Family ========= */
+
+    --font-primary:
+        "Poppins",
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    /* ========= Font Sizes ========= */
+
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-md: 1rem;
+    --font-lg: 1.25rem;
+    --font-xl: 1.5rem;
+    --font-2xl: 2rem;
+    --font-3xl: 3rem;
+
+    /* ========= Font Weights ========= */
+
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+    /* ========= Line Height ========= */
+
+    --line-height: 1.6;
+
+    /* ========= Spacing ========= */
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+    --space-20: 80px;
+
+    /* ========= Transition ========= */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* ========= Z-Index ========= */
+
+    --z-dropdown: 100;
+    --z-sticky: 500;
+    --z-fixed: 700;
+    --z-modal: 1000;
+}
