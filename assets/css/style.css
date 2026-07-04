@@ -1,0 +1,32 @@
+/* ==========================================================
+   Paper Petals
+   Master Stylesheet
+   Import Order Matters
+==========================================================*/
+
+/* ---------- Design System ---------- */
+@import url("variables.css");
+
+/* ---------- Browser Reset ---------- */
+@import url("reset.css");
+
+/* ---------- Global Layout ---------- */
+@import url("layout.css");
+
+/* ---------- Reusable Components ---------- */
+@import url("components.css");
+
+/* ---------- Page Styles ---------- */
+@import url("home.css");
+
+/* Additional page styles
+   (Create these later)
+@import url("shop.css");
+@import url("product.css");
+@import url("cart.css");
+@import url("auth.css");
+@import url("admin.css");
+*/
+
+/* ---------- Responsive ---------- */
+@import url("responsive.css");

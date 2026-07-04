@@ -1,0 +1,252 @@
+/* =====================================================
+   Paper Petals
+   home.css
+   Homepage Styles
+=====================================================*/
+
+/* ---------- Hero Section ---------- */
+
+#hero{
+    position:relative;
+    overflow:hidden;
+    padding:100px 0;
+    background:linear-gradient(
+        135deg,
+        #FFF8F3 0%,
+        #FFD6E7 45%,
+        #EBD8FF 100%
+    );
+}
+
+/* Decorative background circles */
+
+#hero::before{
+    content:"";
+    position:absolute;
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    background:rgba(255,255,255,.35);
+    top:-120px;
+    right:-80px;
+}
+
+#hero::after{
+    content:"";
+    position:absolute;
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    background:rgba(168,230,207,.35);
+    bottom:-60px;
+    left:-60px;
+}
+
+/* ---------- Hero Content ---------- */
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero-content h2{
+    font-size:3.8rem;
+    line-height:1.15;
+    color:var(--text-color);
+    margin-bottom:25px;
+}
+
+.hero-content p{
+    font-size:1.15rem;
+    color:var(--text-light);
+    max-width:550px;
+    margin-bottom:35px;
+}
+
+/* ---------- Hero Button ---------- */
+
+.hero-content button{
+    padding:16px 42px;
+    font-size:1.05rem;
+}
+
+/* ---------- Hero Image ---------- */
+
+.hero-image{
+    position:relative;
+    z-index:2;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:500px;
+    animation:floatImage 4s ease-in-out infinite;
+}
+
+/* ---------- Floating Animation ---------- */
+
+@keyframes floatImage{
+    0%{
+
+        transform:translateY(0px);
+
+    }
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+    100%{
+
+        transform:translateY(0px);
+
+    }
+}
+
+/* ---------- Featured Products ---------- */
+
+#featured{
+    background:white;
+}
+
+#featured h2{
+    margin-bottom:60px;
+}
+
+/* Product spacing */
+
+.product-card{
+    position:relative;
+}
+
+/* Featured Badge */
+
+.product-card::before{
+    content:"★ Featured";
+    position:absolute;
+    top:18px;
+    left:18px;
+    background:#FF8DB7;
+    color:white;
+    padding:6px 14px;
+    border-radius:999px;
+    font-size:.75rem;
+    font-weight:600;
+}
+
+/* ---------- Categories ---------- */
+
+#categories{
+    background:#FFF8F3;
+}
+
+.category-card{
+    min-height:220px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.category-card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+/* ---------- Best Sellers ---------- */
+
+.best-seller-list article{
+    background:white;
+    padding:24px;
+    border-radius:18px;
+    box-shadow:var(--shadow-small);
+    transition:.3s;
+}
+
+.best-seller-list article:hover{
+    background:var(--primary-color);
+    transform:translateY(-5px);
+}
+
+/* ---------- Testimonials ---------- */
+
+#testimonials{
+    background:linear-gradient(
+        to bottom,
+        #ffffff,
+        #FFF8F3
+    );
+
+}
+
+.testimonial{
+    transition:.3s;
+}
+
+.testimonial:hover{
+    transform:translateY(-10px);
+}
+
+/* ---------- Newsletter ---------- */
+
+#newsletter{
+    position:relative;
+    overflow:hidden;
+}
+
+#newsletter::before{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    background:rgba(255,255,255,.2);
+    border-radius:50%;
+    top:-100px;
+    left:-100px;
+}
+
+#newsletter::after{
+    content:"";
+    position:absolute;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+    right:-60px;
+    bottom:-60px;
+}
+
+/* ---------- Newsletter Button ---------- */
+
+#newsletter button{
+    background:white;
+}
+
+#newsletter button:hover{
+    background:var(--accent-color);
+}
+
+/* ---------- Section Animation ---------- */
+
+section{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
