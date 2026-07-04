@@ -1,0 +1,133 @@
+/* =========================================================
+   Paper Petals
+   reset.css
+   Removes browser default styling
+   ========================================================= */
+
+/* ---------- Universal Reset ---------- */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ---------- HTML ---------- */
+
+html{
+    scroll-behavior:smooth;
+    font-size:16px;
+}
+
+/* ---------- Body ---------- */
+
+body{
+    min-height:100vh;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.6;
+}
+
+/* ---------- Images ---------- */
+
+img,
+picture{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+/* ---------- Links ---------- */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* ---------- Lists ---------- */
+
+ul,
+ol{
+    list-style:none;
+}
+
+/* ---------- Buttons ---------- */
+
+button{
+    border:none;
+    outline:none;
+    background:none;
+    cursor:pointer;
+    font:inherit;
+}
+
+/* ---------- Inputs ---------- */
+
+input,
+textarea,
+select,
+button{
+    font:inherit;
+}
+
+/* ---------- Textarea ---------- */
+
+textarea{
+    resize:vertical;
+}
+
+/* ---------- Tables ---------- */
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* ---------- Headings ---------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight:inherit;
+}
+
+/* ---------- Paragraph ---------- */
+
+p{
+
+    overflow-wrap:break-word;
+
+}
+
+/* ---------- Form Elements ---------- */
+
+input,
+textarea,
+select{
+    outline:none;
+}
+
+/* ---------- Focus ---------- */
+
+:focus-visible{
+    outline:3px solid #A8E6CF;
+    outline-offset:3px;
+}
+
+/* ---------- Disabled ---------- */
+
+button:disabled{
+    cursor:not-allowed;
+    opacity:.6;
+}
+
+/* ---------- Hidden ---------- */
+
+[hidden]{
+    display:none !important;
+}
