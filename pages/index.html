@@ -1,137 +1,423 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paper Petals - Cute stationery shopping website featuring journals, notebooks, pens, stickers and planners.">
+    <meta name="keywords" content="stationery, journals, notebooks, pens, planners, stickers">
+    <meta name="author" content="Vanita">
+
+    <title>Paper Petals | Cute Stationery Store</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+
 </head>
 
 <body>
 
-<header>
+    <!-- ================= HEADER ================= -->
 
-    <div class="logo">
-        Paper Petals
-    </div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>🌸 Paper Petals</h1>
+                </a>
+            </div>
 
-    <nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
 
-        <a href="index.html">Home</a>
+            <div class="header-actions">
+                <input
+                    type="search"
+                    placeholder="Search cute stationery...">
 
-        <a href="shop.html">Shop</a>
+                <a href="wishlist.html">
+                    ♡ Wishlist
+                </a>
 
-        <a href="about.html">About</a>
+                <a href="cart.html">
+                    🛒 Cart
+                </a>
 
-        <a href="contact.html">Contact</a>
+                <a href="login.html">
+                    Login
+                </a>
 
-        <a href="faq.html">FAQ</a>
+            </div>
+        </div>
+    </header>
 
-    </nav>
+    <!-- ================= MAIN ================= -->
 
-    <div class="search">
+    <main>
+        <!-- HERO -->
+        <section id="hero">
+            <div class="hero-content">
+                <h2>
+                    Cute Stationery
+                    <br>
+                    For Every Creative Soul
+                </h2>
+                <p>
 
-        <input
-            type="text"
-            placeholder="Search stationery">
+                    Discover adorable journals,
+                    pastel notebooks,
+                    colorful gel pens,
+                    planners,
+                    stickers,
+                    washi tapes
+                    and more.
 
-    </div>
+                </p>
+                <a href="shop.html">
+                    <button>
 
-    <div class="icons">
+                        Shop Now
 
-        <a href="wishlist.html">Wishlist</a>
+                    </button><br>
+                </a>
 
-        <a href="cart.html">Cart</a>
+            </div>
 
-        <a href="login.html">Login</a>
+            <div class="hero-image">
+                <img
+                    src="../assets/images/banners/hero-banner.png"
+                    alt="Cute Stationery Collection">
+            </div>
+        </section>
 
-    </div>
+        <!-- FEATURED PRODUCTS -->
 
-</header>
+        <section id="featured">
+            <h2>
+                Featured Products
+            </h2>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img
+                        src="../assets/images/products/journal1.jpg"
+                        alt="Blossom Floral Journal">
+                    <h3>
+                        Blossom Floral Journal
+                    </h3>
+                    <p>
 
-<main>
+                        ₹499
 
-<section id="hero">
+                    </p>
+                    <button>
 
-<h1>
+                        View Product
 
-Cute Stationery
-for Every Creative Moment
+                    </button><br>
+                </article>
 
-</h1>
+                <article class="product-card">
+                    <img
+                        src="../assets/images/products/notebook1.jpg"
+                        alt="Pastel Dreams Notebook">
+                    <h3> Pastel Dreams Notebook </h3>
+                    <p>
 
-<p>
+                        ₹299
 
-Discover journals,
-pens,
-stickers,
-and planners.
+                    </p>
+                    <button>
 
-</p>
+                        View Product
 
-<button>
+                    </button>
+                </article>
 
-Shop Now
+                <article class="product-card">
+                    <img
+                        src="../assets/images/products/gelpen1.jpg"
+                        alt="Sakura Gel Pen Set">
 
-</button>
+                    <h3>
+                        Sakura Gel Pen Set
+                    </h3>
+                    <p>
 
-</section>
+                        ₹349
 
-</main>
+                    </p>
+                    <button>
 
-<footer>
+                        View Product
 
-<section>
+                    </button>
+                </article>
 
-<h3>Paper Petals</h3>
+                <article class="product-card">
+                    <img
+                        src="../assets/images/products/planner1.jpg"
+                        alt="2026 Daily Planner">
 
-<p>
-Cute stationery for creative minds.
-</p>
+                    <h3>
+                        2026 Daily Planner
+                    </h3>
+                    <p>
 
-</section>
+                        ₹699
 
-<section>
+                    </p>
+                    <button>
 
-<h3>Quick Links</h3>
+                        View Product
 
-<ul>
+                    </button>
+                </article>
+            </div>
+        </section>
 
-<li>Home</li>
+        <!-- ================= CATEGORIES ================= -->
 
-<li>Shop</li>
+        <section id="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
 
-<li>About</li>
+                <article class="category-card">
+                    <h3>📔 Journals</h3>
+                    <p>Elegant journals for daily writing and creative thoughts.</p>
+                </article>
 
-<li>Contact</li>
+                <article class="category-card">
+                    <h3>📒 Notebooks</h3>
+                    <p>Premium notebooks for school, college and work.</p>
+                </article>
 
-</ul>
+                <article class="category-card">
+                    <h3>🖊 Gel Pens</h3>
+                    <p>Smooth writing pens in beautiful pastel colours.</p>
+                </article>
 
-</section>
+                <article class="category-card">
+                    <h3>🎨 Brush Pens</h3>
+                    <p>Perfect for lettering, drawing and colouring.</p>
+                </article>
 
-<section>
+                <article class="category-card">
+                    <h3>🌸 Stickers</h3>
+                    <p>Cute decorative stickers for journals and planners.</p>
+                </article>
 
-<h3>Newsletter</h3>
+                <article class="category-card">
+                    <h3>📝 Sticky Notes</h3>
+                    <p>Never miss an important reminder again.</p>
+                </article>
 
-<input
-type="email"
-placeholder="Your Email">
+                <article class="category-card">
+                    <h3>🎀 Washi Tape</h3>
+                    <p>Decorate every page with colourful washi tapes.</p>
+                </article>
 
-<button>
+                <article class="category-card">
+                    <h3>📅 Planners</h3>
+                    <p>Organise your daily life beautifully.</p>
+                </article>
 
-Subscribe
+            </div>
+        </section>
 
-</button>
+        <!-- ================= NEW ARRIVALS ================= -->
 
-</section>
+        <section id="new-arrivals">
+            <h2>New Arrivals</h2>
+            <div class="product-grid">
 
-<p>
+                <article class="product-card">
+                    <img src="../assets/images/products/washi1.jpg"
+                        alt="Pastel Washi Tape">
 
-© 2026 Paper Petals
+                    <h3>Pastel Washi Tape Set</h3>
+                    <p>₹299</p>
+                    <button>View Product</button>
+                </article>
 
-</p>
+                <article class="product-card">
+                    <img src="../assets/images/products/sticker2.jpg"
+                        alt="Vintage Floral Stickers">
 
-</footer>
+                    <h3>Vintage Floral Stickers</h3>
+                    <p>₹249</p>
+                    <button>View Product</button>
+                </article>
 
-<script>
+                <article class="product-card">
+                    <img src="../assets/images/products/case1.jpg"
+                        alt="Canvas Pencil Case">
 
-</script>
+                    <h3>Canvas Pencil Case</h3>
+                    <p>₹399</p>
+                    <button>View Product</button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ================= BEST SELLERS ================= -->
+
+        <section id="best-sellers">
+            <h2>Best Sellers</h2>
+            <div class="best-seller-list">
+
+                <article>
+                    ⭐ Blossom Floral Journal
+                </article>
+
+                <article>
+                    ⭐ Sakura Gel Pen Set
+                </article>
+
+                <article>
+                    ⭐ 2026 Daily Planner
+                </article>
+
+                <article>
+                    ⭐ Cute Animal Stickers
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ================= TESTIMONIALS ================= -->
+
+        <section id="testimonials">
+            <h2>What Our Customers Say</h2>
+
+            <article class="testimonial">
+                <p>
+
+                    "The cutest stationery store I've ever shopped from!
+                    Excellent quality and fast delivery."
+
+                </p>
+                <h4>— Aanya</h4>
+            </article>
+
+            <article class="testimonial">
+                <p>
+
+                    "Beautiful notebooks and amazing pens.
+                    Everything feels premium."
+
+                </p>
+                <h4>— Riya</h4>
+            </article>
+
+            <article class="testimonial">
+                <p>
+
+                    "My planner collection is now complete thanks to
+                    Paper Petals."
+
+                </p>
+                <h4>— Sneha</h4>
+            </article>
+
+        </section>
+
+        <!-- ================= NEWSLETTER ================= -->
+
+        <section id="newsletter">
+            <div class="newsletter-container">
+                <h2>Join Our Paper Club 💌</h2>
+                <p>
+                    Subscribe to receive updates on new stationery,
+                    exclusive discounts, and creative inspiration.
+                </p>
+
+                <form id="newsletter-form">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required>
+
+                    <button type="submit">
+                        Subscribe
+                    </button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+        <div class="footer-container">
+
+            <section class="footer-about">
+                <h3>🌸 Paper Petals</h3>
+                <p>
+                    We believe beautiful stationery inspires creativity.
+                    Discover journals, planners, notebooks,
+                    pens and accessories designed to brighten your day.
+                </p>
+            </section>
+
+            <section class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-support">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li>Email: support@paperpetals.com</li>
+                    <li>Phone: +91 98765 43210</li>
+                    <li>Mon – Sat</li>
+                    <li>9:00 AM – 6:00 PM</li>
+                </ul>
+            </section>
+
+            <section class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Pinterest</li>
+                    <li>Facebook</li>
+                    <li>YouTube</li>
+                </ul>
+            </section>
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+            <p>
+
+                © 2026 Paper Petals.
+                All Rights Reserved.
+
+            </p>
+        </div>
+
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="../assets/js/app.js"></script>
 
 </body>
 </html>
