@@ -1,0 +1,241 @@
+/* ======================================================
+   Paper Petals
+   layout.css
+   Global Layout Styles
+====================================================== */
+
+/* ---------- Body ---------- */
+
+body{
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    line-height: var(--line-height);
+}
+
+/* ---------- Container ---------- */
+
+.container{
+    width: min(90%, var(--container-width));
+    margin: 0 auto;
+}
+
+/* ---------- Section ---------- */
+
+section{
+    padding: var(--space-16) 0;
+}
+
+section h2{
+    text-align:center;
+    font-size:var(--font-2xl);
+    font-weight:var(--weight-bold);
+    margin-bottom:var(--space-10);
+}
+
+/* ---------- Header ---------- */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:var(--z-sticky);
+    background:var(--surface-color);
+    box-shadow:var(--shadow-small);
+}
+
+header .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    min-height:var(--header-height);
+    gap:var(--space-6);
+}
+
+/* ---------- Logo ---------- */
+
+.logo h1{
+    font-size:1.8rem;
+    color:#ff73a6;
+}
+
+/* ---------- Navigation ---------- */
+
+nav ul{
+    display:flex;
+    gap:2rem;
+}
+
+nav a{
+    font-weight:500;
+    transition:var(--transition-normal);
+}
+
+nav a:hover{
+    color:#ff73a6;
+}
+
+/* ---------- Header Right ---------- */
+
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+
+.header-actions input{
+    width:220px;
+    padding:10px 16px;
+    border:1px solid var(--border-color);
+    border-radius:999px;
+    background:white;
+}
+
+/* ---------- Hero ---------- */
+
+#hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:4rem;
+    min-height:80vh;
+}
+
+.hero-content h2{
+    text-align:left;
+    font-size:3.5rem;
+    margin-bottom:1.5rem;
+}
+
+.hero-content p{
+    font-size:1.1rem;
+    margin-bottom:2rem;
+    color:var(--text-light);
+}
+
+.hero-image{
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    max-width:500px;
+}
+
+/* ---------- Product Grid ---------- */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+    gap:2rem;
+}
+
+/* ---------- Category Grid ---------- */
+
+.category-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+    gap:1.5rem;
+}
+
+/* ---------- Best Sellers ---------- */
+
+.best-seller-list{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+    gap:1rem;
+}
+
+/* ---------- Testimonials ---------- */
+
+#testimonials{
+    text-align:center;
+}
+
+.testimonial{
+    max-width:700px;
+    margin:2rem auto;
+}
+
+/* ---------- Newsletter ---------- */
+
+.newsletter-container{
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+}
+
+#newsletter form{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    margin-top:2rem;
+    flex-wrap:wrap;
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+    background:var(--primary-color);
+    margin-top:5rem;
+}
+
+.footer-container{
+    width:min(90%,1200px);
+    margin:auto;
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+    gap:2rem;
+    padding:4rem 0;
+}
+
+.footer-container h3{
+    margin-bottom:1rem;
+}
+
+.footer-container ul{
+    display:flex;
+    flex-direction:column;
+    gap:.8rem;
+}
+
+.footer-container li{
+    color:var(--text-light);
+}
+
+footer hr{
+    border:none;
+    border-top:1px solid rgba(0,0,0,.08);
+}
+
+.copyright{
+    text-align:center;
+    padding:1.5rem;
+}
+
+/* ---------- Utility Classes ---------- */
+
+.flex{
+    display:flex;
+}
+
+.flex-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.grid{
+    display:grid;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.hidden{
+    display:none;
+}
