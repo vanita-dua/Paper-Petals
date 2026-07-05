@@ -1,0 +1,294 @@
+/* ==========================================================
+   Paper Petals
+   shop.css
+   Shop Page Styles
+==========================================================*/
+
+/* ---------- Shop Page ---------- */
+
+.shop-page{
+
+    padding:80px 0;
+
+    background:var(--background-color);
+
+}
+
+/* ---------- Shop Heading ---------- */
+
+.shop-page h2{
+
+    margin-bottom:50px;
+
+}
+
+/* ---------- Layout ---------- */
+
+.shop-layout{
+
+    display:grid;
+
+    grid-template-columns:280px 1fr;
+
+    gap:35px;
+
+    align-items:start;
+
+}
+
+/* ---------- Sidebar ---------- */
+
+.shop-sidebar{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    box-shadow:var(--shadow-small);
+
+    position:sticky;
+
+    top:100px;
+
+}
+
+/* ---------- Sidebar Heading ---------- */
+
+.shop-sidebar h3{
+
+    margin-bottom:15px;
+
+    font-size:1.2rem;
+
+}
+
+/* ---------- Divider ---------- */
+
+.shop-sidebar hr{
+
+    margin:25px 0;
+
+    border:none;
+
+    border-top:1px solid var(--border-color);
+
+}
+
+/* ---------- Category List ---------- */
+
+.shop-sidebar ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.shop-sidebar li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.shop-sidebar li:hover{
+
+    color:#ff73a6;
+
+    padding-left:6px;
+
+}
+
+/* ---------- Range Slider ---------- */
+
+.shop-sidebar input[type="range"]{
+
+    width:100%;
+
+    margin:20px 0;
+
+    accent-color:#ff73a6;
+
+}
+
+/* ---------- Sort Dropdown ---------- */
+
+.shop-sidebar select{
+
+    margin-top:15px;
+
+}
+
+/* ---------- Products Area ---------- */
+
+.shop-products{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:40px;
+
+}
+
+/* ---------- Product Grid ---------- */
+
+.shop-products .product-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fill,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+/* ---------- Product Card ---------- */
+
+.shop-products .product-card{
+
+    position:relative;
+
+    transition:.35s;
+
+    overflow:hidden;
+
+}
+
+.shop-products .product-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* ---------- Product Image ---------- */
+
+.shop-products .product-card img{
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+/* ---------- Product Title ---------- */
+
+.shop-products h3{
+
+    margin-top:18px;
+
+}
+
+/* ---------- Rating ---------- */
+
+.shop-products p:nth-child(4){
+
+    color:#F4B400;
+
+    font-weight:600;
+
+}
+
+/* ---------- Price ---------- */
+
+.shop-products strong{
+
+    color:#ff4f87;
+
+    font-size:1.2rem;
+
+}
+
+.shop-products del{
+
+    color:#999;
+
+    margin-left:8px;
+
+}
+
+/* ---------- Pagination ---------- */
+
+.pagination{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+}
+
+.pagination a{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:white;
+
+    border-radius:50%;
+
+    box-shadow:var(--shadow-small);
+
+    transition:.3s;
+
+}
+
+.pagination a:hover{
+
+    background:var(--primary-color);
+
+}
+
+.pagination .active{
+
+    background:var(--secondary-color);
+
+}
+
+/* ---------- Shop Animation ---------- */
+
+.shop-products .product-card{
+
+    animation:fadeProduct .6s ease;
+
+}
+
+@keyframes fadeProduct{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
