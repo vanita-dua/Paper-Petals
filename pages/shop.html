@@ -47,6 +47,7 @@
     <div class="header-actions">
     <input
     type="search"
+    id="search-input"
     placeholder="Search stationery...">
     <a href="wishlist.html">
 
@@ -90,18 +91,21 @@
 
                 </h3>
 
-                <ul>
-                    <li><input type="checkbox"> Journals</li>
-                    <li><input type="checkbox"> Notebooks</li>
-                    <li><input type="checkbox"> Gel Pens</li>
-                    <li><input type="checkbox"> Brush Pens</li>
-                    <li><input type="checkbox"> Stickers</li>
-                    <li><input type="checkbox"> Sticky Notes</li>
-                    <li><input type="checkbox"> Washi Tape</li>
-                    <li><input type="checkbox"> Planners</li>
-                    <li><input type="checkbox"> Pencil Cases</li>
-                    <li><input type="checkbox"> Desk Organizers</li>
-                    <li><input type="checkbox"> Gift Boxes</li>
+                <ul id="category-list">
+
+                    <li data-category="All">All Products</li>
+                    <li data-category="Journals">Journals</li>
+                    <li data-category="Notebooks">Notebooks</li>
+                    <li data-category="Gel Pens">Gel Pens</li>
+                    <li data-category="Brush Pens">Brush Pens</li>
+                    <li data-category="Stickers">Stickers</li>
+                    <li data-category="Sticky Notes">Sticky Notes</li>
+                    <li data-category="Washi Tape">Washi Tape</li>
+                    <li data-category="Planners">Planners</li>
+                    <li data-category="Pencil Cases">Pencil Cases</li>
+                    <li data-category="Desk Organizers">Desk Organizers</li>
+                    <li data-category="Gift Boxes">Gift Boxes</li>
+
                 </ul>
                 <hr>
                 <h3>
@@ -124,39 +128,35 @@
                 Sort By
 
                 </h3>
-                    <select>
-                        <option>
+                    <select id="sort-select">
 
-                        Featured
-
+                        <option value="featured">
+                            Featured
                         </option>
-                        <option>
 
-                        Price Low to High
-
+                        <option value="low-high">
+                            Price: Low to High
                         </option>
-                        <option>
 
-                        Price High to Low
-
+                        <option value="high-low">
+                            Price: High to Low
                         </option>
-                        <option>
 
-                        Highest Rated
-
+                        <option value="rating">
+                            Highest Rated
                         </option>
-                        <option>
 
-                        Newest
-
+                        <option value="newest">
+                            Newest
                         </option>
+
                     </select>
                 </aside>
 
                 <!-- ================= PRODUCTS ================= -->
 
                 <section class="shop-products">
-                    <div class="product-grid">
+                    <div id ="product-grid" class="product-grid">
 
                     <!-- ================= PRODUCT 1 ================= -->
 
@@ -476,5 +476,12 @@
 </footer>
 <!-- ================= JAVASCRIPT ================= -->
 <script src="../assets/js/app.js"></script>
+<script src="../assets/js/products.js"></script>
+<script src="../assets/js/renderProducts.js"></script>
+<script src="../assets/js/state.js"></script>
+<script src="../assets/js/updateProducts.js"></script>
+<script src="../assets/js/search.js"></script>
+<script src="../assets/js/filter.js"></script>
+<script src="../assets/js/sort.js"></script>
 </body>
 </html>
