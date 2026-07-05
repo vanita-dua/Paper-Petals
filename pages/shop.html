@@ -23,182 +23,458 @@
 
 <body>
 <header>
-<div class="container">
-<div class="logo">
-<a href="index.html">
-<h1>
-    
-🌸 Paper Petals
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <h1>
+                    
+                🌸 Paper Petals
 
-</h1>
+                </h1>
+            </a>
+        </div>
 
-</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
 
-</div>
+    <div class="header-actions">
+    <input
+    type="search"
+    placeholder="Search stationery...">
+    <a href="wishlist.html">
 
-<nav>
+    ♡ Wishlist
 
-<ul>
+    </a>
 
-<li><a href="index.html">Home</a></li>
+    <a href="cart.html">
 
-<li><a href="shop.html">Shop</a></li>
+    🛒 Cart
 
-<li><a href="about.html">About</a></li>
+    </a>
 
-<li><a href="contact.html">Contact</a></li>
+    <a href="login.html">
 
-<li><a href="faq.html">FAQ</a></li>
+    Login
 
-</ul>
-
-</nav>
-
-<div class="header-actions">
-
-<input
-type="search"
-placeholder="Search stationery...">
-
-<a href="wishlist.html">
-
-♡ Wishlist
-
-</a>
-
-<a href="cart.html">
-
-🛒 Cart
-
-</a>
-
-<a href="login.html">
-
-Login
-
-</a>
-
-</div>
-
-</div>
-
+    </a>
+    </div>
+    </div>
 </header>
 
 <main>
+    <section class="shop-page">
+        <div class="container">
+            <h2>
 
-<section class="shop-page">
+            Shop Cute Stationery
 
-<div class="container">
+            </h2>
 
-<h2>
+            <div class="shop-layout">
 
-Shop Cute Stationery
+                <!-- ================= SIDEBAR ================= -->
 
-</h2>
+                <aside class="shop-sidebar">
 
-<div class="shop-layout">
+                <h3>
 
-<!-- ================= SIDEBAR ================= -->
+                Categories
 
-<aside class="shop-sidebar">
+                </h3>
 
-<h3>
+                <ul>
+                    <li><input type="checkbox"> Journals</li>
+                    <li><input type="checkbox"> Notebooks</li>
+                    <li><input type="checkbox"> Gel Pens</li>
+                    <li><input type="checkbox"> Brush Pens</li>
+                    <li><input type="checkbox"> Stickers</li>
+                    <li><input type="checkbox"> Sticky Notes</li>
+                    <li><input type="checkbox"> Washi Tape</li>
+                    <li><input type="checkbox"> Planners</li>
+                    <li><input type="checkbox"> Pencil Cases</li>
+                    <li><input type="checkbox"> Desk Organizers</li>
+                    <li><input type="checkbox"> Gift Boxes</li>
+                </ul>
+                <hr>
+                <h3>
 
-Categories
+                Price
 
-</h3>
+                </h3>
+                <input
+                type="range"
+                min="100"
+                max="2000">
+                <p>
 
-<ul>
+                ₹100 - ₹2000
 
-<li><input type="checkbox"> Journals</li>
+                </p>
+                <hr>
+                <h3>
 
-<li><input type="checkbox"> Notebooks</li>
+                Sort By
 
-<li><input type="checkbox"> Gel Pens</li>
+                </h3>
+                    <select>
+                        <option>
 
-<li><input type="checkbox"> Brush Pens</li>
+                        Featured
 
-<li><input type="checkbox"> Stickers</li>
+                        </option>
+                        <option>
 
-<li><input type="checkbox"> Sticky Notes</li>
+                        Price Low to High
 
-<li><input type="checkbox"> Washi Tape</li>
+                        </option>
+                        <option>
 
-<li><input type="checkbox"> Planners</li>
+                        Price High to Low
 
-<li><input type="checkbox"> Pencil Cases</li>
+                        </option>
+                        <option>
 
-<li><input type="checkbox"> Desk Organizers</li>
+                        Highest Rated
 
-<li><input type="checkbox"> Gift Boxes</li>
+                        </option>
+                        <option>
 
-</ul>
+                        Newest
 
-<hr>
+                        </option>
+                    </select>
+                </aside>
 
-<h3>
+                <!-- ================= PRODUCTS ================= -->
 
-Price
+                <section class="shop-products">
+                    <div class="product-grid">
 
-</h3>
+                    <!-- ================= PRODUCT 1 ================= -->
 
-<input
-type="range"
-min="100"
-max="2000">
+                    <article class="product-card">
+                        <img src="../assets/images/products/floral-journal.jpg"
+                            alt="Floral Journal">
 
-<p>
+                        <h3>Floral Dream Journal</h3>
+                        <p>Brand: Paper Petals</p>
+                        <p>⭐⭐⭐⭐⭐ (4.9)</p>
+                        <p>
+                            <strong>₹399</strong>
+                            <del>₹499</del>
+                        </p>
+                        <button>Add to Cart</button>
+                    </article>
 
-₹100 - ₹2000
+                    <!-- ================= PRODUCT 2 ================= -->
 
-</p>
+                    <article class="product-card">
+                        <img src="../assets/images/products/pastel-notebook.jpg"
+                            alt="Pastel Notebook">
 
-<hr>
+                        <h3>Pastel Spiral Notebook</h3>
+                        <p>Brand: Deli</p>
+                        <p>⭐⭐⭐⭐☆ (4.7)</p>
+                        <p>
+                            <strong>₹249</strong>
+                            <del>₹299</del>
+                        </p>
+                        <button>Add to Cart</button>
+                    </article>
 
-<h3>
+                    <!-- ================= PRODUCT 3 ================= -->
 
-Sort By
+                    <article class="product-card">
+                        <img src="../assets/images/products/gel-pens.jpg"
+                            alt="Gel Pens">
 
-</h3>
+                        <h3>Macaron Gel Pen Set</h3>
+                        <p>Brand: Zebra</p>
+                        <p>⭐⭐⭐⭐⭐ (5.0)</p>
+                        <p>
+                            <strong>₹349</strong>
+                            <del>₹399</del>
+                        </p>
+                        <button>Add to Cart</button>
+                    </article>
 
-<select>
+                    <!-- ================= PRODUCT 4 ================= -->
 
-<option>
+                    <article class="product-card">
+                        <img src="../assets/images/products/stickers.jpg"
+                            alt="Stickers">
 
-Featured
+                        <h3>Kawaii Sticker Pack</h3>
+                        <p>Brand: Paper Petals</p>
+                        <p>⭐⭐⭐⭐☆ (4.8)</p>
+                        <p>
+                            <strong>₹199</strong>
+                            <del>₹249</del>
+                        </p>
+                        <button>Add to Cart</button>
+                    </article>
 
-</option>
+                    <!-- ================= PRODUCT 5 ================= -->
 
-<option>
+                    <article class="product-card">
+                        <img src="../assets/images/products/washi-tape.jpg"
+                            alt="Washi Tape">
 
-Price Low to High
+                        <h3>Pastel Washi Tape Set</h3>
+                        <p>Brand: MT</p>
+                        <p>⭐⭐⭐⭐⭐ (4.9)</p>
+                        <p>
+                            <strong>₹299</strong>
+                            <del>₹349</del>
+                        </p>
+                        <button>Add to Cart</button>
+                    </article>
 
-</option>
+                    <!-- ================= PRODUCT 6 ================= -->
 
-<option>
+                    <article class="product-card">
+                        <img src="../assets/images/products/planner.jpg"
+                            alt="Planner">
 
-Price High to Low
+                        <h3>Weekly Study Planner</h3>
+                        <p>Brand: Muji</p>
+                        <p>⭐⭐⭐⭐☆ (4.6)</p>
+                        <p>
+                            <strong>₹599</strong>
+                            <del>₹699</del>
+                        </p>
+                        <button>Add to Cart</button>
+                    </article>
 
-</option>
+                    <!-- ================= PRODUCT 7 ================= -->
 
-<option>
+                    <article class="product-card">
+                        <img src="../assets/images/products/pencil-case.jpg"
+                            alt="Pencil Case">
 
-Highest Rated
+                        <h3>Canvas Pencil Case</h3>
+                        <p>Brand: Kokuyo</p>
+                        <p>⭐⭐⭐⭐⭐ (4.8)</p>
+                        <p>
+                            <strong>₹449</strong>
+                            <del>₹549</del>
+                        </p>
+                        <button>Add to Cart</button>
+                    </article>
 
-</option>
+                    <!-- ================= PRODUCT 8 ================= -->
 
-<option>
+                    <article class="product-card">
+                        <img src="../assets/images/products/sticky-notes.jpg"
+                            alt="Sticky Notes">
 
-Newest
+                        <h3>Pastel Sticky Notes</h3>
+                        <p>Brand: Paper Petals</p>
+                        <p>⭐⭐⭐⭐☆ (4.7)</p>
+                        <p>
+                            <strong>₹149</strong>
+                            <del>₹199</del>
+                        </p>
+                        <button>Add to Cart</button>
+                    </article>
 
-</option>
+                    <!-- ================= PRODUCT 9 ================= -->
 
-</select>
+                    <article class="product-card">
+                        <img src="../assets/images/products/desk-organizer.jpg"
+                            alt="Desk Organizer">
 
-</aside>
+                        <h3>Wooden Desk Organizer</h3>
+                        <p>Brand: IKEA</p>
+                        <p>⭐⭐⭐⭐⭐ (4.9)</p>
+                        <p>
+                            <strong>₹899</strong>
+                            <del>₹999</del>
+                        </p>
+                        <button>Add to Cart</button>
+                    </article>
 
-<!-- ================= PRODUCTS ================= -->
+                    <!-- ================= PRODUCT 10 ================= -->
 
-<section class="shop-products">
+                    <article class="product-card">
+                        <img src="../assets/images/products/brush-pens.jpg"
+                            alt="Brush Pens">
 
-<div class="product-grid">
+                        <h3>Dual Tip Brush Pens</h3>
+                        <p>Brand: Tombow</p>
+                        <p>⭐⭐⭐⭐⭐ (5.0)</p>
+                        <p>
+                            <strong>₹799</strong>
+                            <del>₹899</del>
+                        </p>
+                        <button>Add to Cart</button>
+                    </article>
+
+                    <!-- ================= PRODUCT 11 ================= -->
+
+                    <article class="product-card">
+                        <img src="../assets/images/products/gift-box.jpg"
+                            alt="Gift Box">
+
+                        <h3>Stationery Gift Box</h3>
+                        <p>Brand: Paper Petals</p>
+                        <p>⭐⭐⭐⭐⭐ (4.9)</p>
+                        <p>
+                            <strong>₹1299</strong>
+                            <del>₹1499</del>
+                        </p>
+                        <button>Add to Cart</button>
+                    </article>
+
+                    <!-- ================= PRODUCT 12 ================= -->
+
+                    <article class="product-card">
+                        <img src="../assets/images/products/notepad.jpg"
+                            alt="Notepad">
+
+                        <h3>Minimal Daily Notepad</h3>
+                        <p>Brand: Muji</p>
+                        <p>⭐⭐⭐⭐☆ (4.6)</p>
+                        <p>
+                            <strong>₹199</strong>
+                            <del>₹249</del>
+                        </p>
+                        <button>Add to Cart</button>
+                    </article>
+                    </div>
+
+                        <!-- ================= PAGINATION ================= -->
+
+                        <div class="pagination">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">Next →</a>
+                        </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+    <div class="footer-container">
+        <section class="footer-about">
+            <h3>🌸 Paper Petals</h3>
+            <p>
+
+                Your happy place for beautiful stationery,
+                planners, journals, stickers,
+                pens and creative accessories.
+
+            </p>
+        </section>
+        <section class="footer-links">
+            <h3>
+
+                Quick Links
+
+            </h3>
+            <ul>
+                <li>
+                    <a href="index.html">
+
+                        Home
+
+                    </a>
+                </li>
+                <li>
+                    <a href="shop.html">
+
+                        Shop
+
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+
+                        About
+
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+
+                        Contact
+
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+
+                        FAQ
+
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="footer-support">
+            <h3>
+                Customer Support
+            </h3>
+            <ul>
+                <li>
+
+                    support@paperpetals.com
+
+                </li>
+                <li>
+
+                    +91 98765 43210
+
+                </li>
+                <li>
+
+                    Monday – Saturday
+
+                </li>
+                <li>
+
+                    9:00 AM – 6:00 PM
+
+                </li>
+            </ul>
+        </section>
+        <section class="footer-social">
+            <h3>
+
+                Follow Us
+
+            </h3>
+            <ul>
+                <li>Instagram</li>
+                <li>Pinterest</li>
+                <li>Facebook</li>
+                <li>YouTube</li>
+            </ul>
+        </section>
+    </div>
+    <hr>
+    <div class="copyright">
+        <p>
+
+            © 2026 Paper Petals.
+            All Rights Reserved.
+
+        </p>
+    </div>
+</footer>
+<!-- ================= JAVASCRIPT ================= -->
+<script src="../assets/js/app.js"></script>
+</body>
+</html>
